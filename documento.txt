@@ -1,11 +1,16 @@
 ssh-keygen -t rsa -f "/c/users/jonitas/.ssh/github" -C 'jonimendes@gmail.com'
+
+abrindo o terminal
 eval "$(ssh-agent -s)"
 ssh-add /c/users/jonitas/.ssh/github
 
+iniciando git
 git init
 git config --global user.name "jonitasouza"
 git config --global user.email "jonitasouza@gmail.com"
 git remote add origin git@github.com:jonitasouza/teste.git
+
+edutar 
 git add .
 git commit -m 'Initial'
 git push origin master
